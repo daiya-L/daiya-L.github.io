@@ -6,48 +6,82 @@
     <meta name="description" content="はこだて 海の幸 Dining SURF">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>はこだて 海の幸 Dining SURF</title>
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Literata:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Literata:500|Slabo+27px&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="inner-header">
-        <ul class="gnav">
-          <li class="gnav__item"><a href="#about">About</li>
-          <li class="gnav__item"><a href="#food">Food</li>
-          <li class="gnav__item"><a href="#drink">Drink</li>
-          <li class="gnav__item"><a href="#access">Access</li>
-        </ul>
+      <div class=inner-header>
+        <div class="top">
+          <img class="top-img" src="img/top-img.svg" alt="dining surf">
+        </div>
+        <nav class="gnav">
+          <ul class="gnav__list">
+            <li class="gnav__item"><a class="gnav__link" href="#about">About</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#food">Food</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#drink">Drink</a></li>
+            <li class="gnav__item"><a class="gnav__link" href="#access">Access</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
       <div class="main-inner">
-        <section class="about">
+        <section id="about" class="about">
           <h1 class="about__title">About</h1>
-          <p class="about__text">surf</p>
+          <div class="about__text-block">
+            <p class="about__text">紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文<br>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
+          </div>
+          <div class="about__img-block">
+            <img class="about__img" src="img/counter.png" alt="">
+            <img class="about__img" src="img/second-floor.png" alt="">
+          </div>
         </section>
-        <section class="food">
+        <section id="food" class="food">
           <h1 class="food__title">Food</h1>
           <p class="food__text">food</p>
+          <img class="food__img" src="img/garlic-shrimp.jpg" alt="">
+          <img class="food__img" src="img/ahijo.jpg" alt="">
+          <img class="food__img" src="img/beaf-redwine.jpg" alt="">
+          <img class="food__img" src="img/carpaccio.jpg" alt="">
+          <img class="food__img" src="img/meat-platter.jpg" alt="">
+          <img class="food__img" src="img/hamu.jpg" alt="">
+          <img class="food__img" src="img/pasta-img.jpg" alt="">
+          <img class="food__img" src="img/pizza-img.jpg" alt="">
+          <img class="food__img" src="img/pafe-chocolat.jpg" alt="">
+          <img class="food__img" src="img/pafe-strawberry.jpg" alt="">
+          <img class="food__img" src="img/catalana.jpg" alt="">
+          <img class="food__img" src="img/vannila-waffle.jpg" alt="">
         </section>
-        <section class="drink">
+        <section id="drink" class="drink">
           <h1 class="drink__title">Drink</h1>
           <p class="drink__text">drink</p>
+          <img class="drink__img" src="img/classical-mojito.jpg" alt="">
+          <img class="drink__img" src="img/cajetta.jpg" alt="">
+          <img class="drink__img" src="img/bear-img.jpg" alt="">
+          <img class="drink__img" src="img/cocktail-img.jpg" alt="">
+          <img class="drink__img" src="img/shochu-nihonshu.jpg" alt="">
         </section>
-        <section class="access">
+        <section id="access" class="access">
           <h1 class="access__title">Access</h1>
           <p class="access__text">access</p>
         </section>
       </div>
     </main>
-    <footer>
-      <div class="footer-inner">
-        <ul class="ft-nav">
-          <li class="ft-nav__item"><a href="#about">About</li>
-          <li class="ft-nav__item"><a href="#food">Food</li>
-          <li class="ft-nav__item"><a href="#drink">Drink</li>
-          <li class="ft-nav__item"><a href="#about">Access</li>
-        </ul>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="logo-img" src="img/logo.jpg" alt="">
       </div>
+      <nav class="footer-inner">
+        <ul class="ft-nav">
+          <li class="ft-nav__item"><a href="#about">About</a></li>
+          <li class="ft-nav__item"><a href="#food">Food</a></li>
+          <li class="ft-nav__item"><a href="#drink">Drink</a></li>
+          <li class="ft-nav__item"><a href="#about">Access</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
