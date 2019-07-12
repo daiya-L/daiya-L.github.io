@@ -1,5 +1,4 @@
 body {
-  font-family: 'Literata', serif;
   box-sizing: border-box;
 }
 
@@ -43,6 +42,7 @@ a {
   font-size: 1.6rem;
   display: flex;
   justify-content: flex-end;
+  font-family: 'Literata', serif;
 }
 
 .gnav__list {
@@ -78,45 +78,114 @@ a {
   }
 }
 
-.main {
-  margin: 40px;
-}
-
 .about, .food, .drink, .access {
-  margin: 40px auto;
+  margin: 80px auto;
+  font-family: 'EB Garamond', serif;
 }
 
-.about__title, .food__title, .drink__title, .access__title {
+.about__title-block {
+  display: flex;
+  background-color: #eef;
+}
+
+.about__title-img {
+  width: 45%;
+}
+
+.about__title-text {
+  margin: 0 auto;
+}
+
+.about__title, .food__title, .drink__title {
   font-size: 3rem;
   text-align: center;
   padding: 40px;
-  margin-bottom: 20px;
+  margin: 60px 0;
+  font-weight: lighter;
 }
 
 .about__text-block {
-  margin: 40px;
-  padding-bottom: 60px;
+  margin: 100px 40px;
 }
 
 .about__text, .food__text, .drink__text, .access__text {
   text-align: center;
 }
 
+.about__text {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.3rem;
+}
+
 .about__img-block {
   display: flex;
   justify-content: space-around;
+  margin: 80px auto;
 }
 
 .about__img {
-  width: 30%;
+  width: 35%;
+
+  &:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+}
+
+.food__img-block, .drink__img-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 40px;
+}
+
+.food__menu, .drink__menu {
+  width: 50%;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .food__img, .drink__img {
-  width: 20%;
+  width: 80%;
+  margin: auto;
+}
+
+.food__text, .drink__text {
+  margin: 20px 0;
+}
+
+.access__title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+  font-weight: lighter;
+}
+
+.access__content {
+  display: flex;
+  align-items: center;
+}
+
+.access__text-block {
+  margin: 0 auto;
+}
+
+.access__list {
+  list-style: none;
+  line-height: 3rem;
+  padding-bottom: 20px;
+}
+
+.access__map {
+  width: 50%;
 }
 
 .footer {
-  background-color: #6495ed;
+  background-color: #b0c4de;
   padding: 20px;
   display: flex;
 }
