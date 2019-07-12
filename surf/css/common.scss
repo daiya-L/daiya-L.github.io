@@ -11,8 +11,19 @@ a {
 .inner-header {
   width: 100%;
   height: 100vh;
-  background: url(../img/food-img-2.png) center center / cover no-repeat;
+  background: center center / cover no-repeat fixed;
   position: relative;
+}
+
+#svg-animation .cls {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 20;
+  stroke-miterlimit: 10;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray: 1500;
+  stroke-dashoffset:1500;
 }
 
 .top {
@@ -22,7 +33,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.top-img {
+.top-logo {
   width: 40vw;
 }
 
@@ -97,7 +108,7 @@ a {
 }
 
 .about__img {
-  width: 40%;
+  width: 30%;
 }
 
 .food__img, .drink__img {
