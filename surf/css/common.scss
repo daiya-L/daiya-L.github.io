@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+.mobile-head {
+  display: none;
+}
+
 .inner-header {
   width: 100%;
   height: 100vh;
@@ -165,13 +169,42 @@ a {
   margin: 80px auto;
 }
 
-.about__img {
-  width: 35%;
+.about__img-cap {
+  width: 38%;
+  overflow: hidden;
+  position: relative;
 
-  &:hover {
-    opacity: 0.9;
-    transition: 0.3s;
+  .caption {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+
+    p {
+      line-height: 2.0;
+    }
   }
+
+  .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+
+  &:hover .mask {
+    opacity: 1;
+    padding-top: 80px;
+  }
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
 }
 
 .food__img-block, .drink__img-block {
@@ -184,6 +217,13 @@ a {
 .food__menu, .drink__menu {
   width: 50%;
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drink__menu-2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,4 +312,205 @@ a {
 .footer__cp {
   text-align: center;
   margin-top: 40px;
+}
+
+/*  SP  */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    font-size: 1.2rem;
+  }
+
+
+
+  .top-logo {
+    width: 60vw;
+  }
+
+  .about, .food, .drink, .access {
+    margin: 40px auto;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .about__title-block {
+    background: #fff;
+    position: relative;
+  }
+
+  .about__title-img {
+    position: absolute;
+    top: 8rem;
+    width: 80%;
+    height: 55%;
+  }
+
+  .about__title, .food__title, .drink__title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 10px 0;
+  }
+
+  .about__text-block {
+    margin: 180px 20px 0 40px;
+    background: rgba(80, 80, 80, 0.8);
+    padding: 5%;
+  }
+
+  .about__text {
+    font-size: 1.1rem;
+    line-height: 2.0rem;
+    color: #fff;
+  }
+
+  .about__img-block {
+    margin: 40px auto 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__img-cap {
+    width: 73%;
+    margin: 10px auto;
+
+    .caption {
+      font-size: 1.0rem;
+      color: #000;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .mask {
+      position: static;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    &:hover .mask {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+
+  .about__img {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+  }
+
+  .food__img-block, .drink__img-block {
+    display: block;
+    margin: 0;
+  }
+
+  .food__menu, .drink__menu {
+    width: 95%;
+    margin: 0 0.5rem 3rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .drink__menu {
+    justify-content: space-around;
+  }
+
+  .drink-sp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drink__menu-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+
+    .drink__img {
+      margin-right: 0.8rem;
+    }
+  }
+
+  .drink__menu-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .food__img, .drink__img {
+    width: 50%;
+    margin: 0 0.5rem;
+  }
+
+  .food__text, .drink__text {
+    margin: 0;
+  }
+
+  .access__title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    font-weight: lighter;
+  }
+
+  .access__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .access__text-block {
+    margin: 0 auto;
+  }
+
+  .access__list {
+    list-style: none;
+    line-height: 2.3rem;
+    font-size: 1.0rem;
+    padding-bottom: 20px;
+  }
+
+  .access__map {
+    width: 90%;
+    padding-left: 2.3rem;
+  }
+
+  .footer {
+    background-color: #4169e1;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .footer-inner {
+    margin: 0 10px;
+  }
+
+  .footer__content {
+    display: flex;
+  }
+
+  .logo-img {
+    width: 40vw;
+    height: 30vh;
+    margin: 20px 40px 0 0;
+  }
+
+  .ft-nav {
+    width: 80%;
+    margin: 20px 0 auto;
+    border-bottom: 1.5px solid #fff;
+  }
+
+  .ft-nav__list {
+    flex-direction: column;
+  }
 }
