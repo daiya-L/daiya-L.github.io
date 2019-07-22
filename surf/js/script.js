@@ -78,7 +78,7 @@ $(function(){
     $(window).on('scroll load', function(){
         var scroll_top = $(this).scrollTop();
         var scroll_btm = scroll_top + $(this).height();
-        var effect_pos = scroll_btm - effect_btm;
+        var effect_pos = scroll_btm - effect_btm + 60px;
 
         //エフェクトが発動したとき、子要素をずらしてフェードさせる
         $('.scroll-fade-row').each( function() {
