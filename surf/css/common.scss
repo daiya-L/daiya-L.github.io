@@ -372,7 +372,7 @@ a {
     display: block;
     margin: auto 10px auto auto;
     width: 50px;
-    height: 6vh;
+    height: 36px;
     position: relative;
     cursor: pointer;
 
@@ -387,7 +387,7 @@ a {
         top: 0;
       }
       &:nth-of-type(2) {
-        top: 2.7vh;
+        top: 16px;
       }
       &:nth-of-type(3) {
         bottom: 0;
@@ -679,7 +679,7 @@ a {
     display: block;
     margin: auto 10px auto auto;
     width: 40px;
-    height: 5vh;
+    height: 32px;
     position: relative;
     cursor: pointer;
 
@@ -694,7 +694,7 @@ a {
         top: 0;
       }
       &:nth-of-type(2) {
-        top: 2.1vh;
+        top: 14px;
       }
       &:nth-of-type(3) {
         bottom: 0;
