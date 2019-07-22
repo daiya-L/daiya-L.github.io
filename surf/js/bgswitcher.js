@@ -331,6 +331,18 @@
       for (; i < length; i++) {
         prop = 'background' + backgroundProperties[i];
         copiedStyle[prop] = this.$el.css(prop);
+
+        prop = '-webkit-background' + backgroundProperties[i];
+        copiedStyle[prop] = this.$el.css(prop);
+
+        prop = '-moz-background' + backgroundProperties[i];
+        copiedStyle[prop] = this.$el.css(prop);
+
+        prop = '-o-background' + backgroundProperties[i];
+        copiedStyle[prop] = this.$el.css(prop);
+
+        prop = '-ms-background' + backgroundProperties[i];
+        copiedStyle[prop] = this.$el.css(prop);
       }
 
       // For IE<=9
