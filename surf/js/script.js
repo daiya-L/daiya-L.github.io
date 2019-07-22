@@ -9,6 +9,30 @@ jQuery(function ($) {
 });
 
 $(function() {
+  $(".nav-toggle").click(function() {
+    $(".nav-toggle div").toggleClass("active");
+  });
+});
+
+$(function() {
+  $(".gnav__link").click(function() {
+    $(".nav-toggle div").toggleClass("active");
+  });
+});
+
+$(function() {
+  $(".nav-toggle").click(function() {
+    $(".gnav").toggleClass("open");
+  });
+});
+
+$(function() {
+  $(".gnav__link").click(function() {
+    $(".gnav").toggleClass("open");
+  });
+});
+
+$(function() {
   var topBtn = $('#page_top');
   topBtn.hide();
 
