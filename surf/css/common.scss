@@ -370,9 +370,9 @@ a {
 
   .nav-toggle {
     display: block;
-    margin: 15px 15px 0 0;
+    margin: auto 10px auto auto;
     width: 50px;
-    height: 36px;
+    height: 6vh;
     position: relative;
     cursor: pointer;
 
@@ -387,7 +387,7 @@ a {
         top: 0;
       }
       &:nth-of-type(2) {
-        top: 16px;
+        top: 2.7vh;
       }
       &:nth-of-type(3) {
         bottom: 0;
