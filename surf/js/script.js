@@ -9,12 +9,12 @@ jQuery(function ($) {
 });
 
 jQuery(function($){
-var ua = navigator.userAgent;
-if ( ua.indexOf( 'iPhone' ) > 0 || ua.indexOf( 'iPad' ) > 0) {
-$('.inner-header').css({
-'background-attachment': 'scroll',
-});
-}
+  var ua = navigator.userAgent;
+  if ( ua.indexOf( 'iPhone' ) > 0 || ua.indexOf( 'iPad' ) > 0) {
+    $('.inner-header').css({
+      'background': 'center center / cover no-repeat scroll',
+    });
+  }
 });
 
 $(function() {
