@@ -848,7 +848,22 @@ a {
   .about__title, .food__title, .drink__title {
     padding-top: 10px;
     padding-bottom: 20px;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 70%;
+  }
+
+  .about__title::before, .about__title::after {
+    content: '';
+    border-top: 2px solid #b0c4de;
+    flex-grow: 1;
+  }
+
+  .about__title::before {
+    margin-right: 2rem;
+  }
+
+  .about__title::after {
+    margin-left: 2rem;
   }
 
   .about__title {
@@ -857,15 +872,16 @@ a {
 
   .about__title-text {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
+    margin-right: 0;
   }
 
   .about__text-block {
     margin: 200px 0 0 0;
     background: rgba(60, 60, 60, 0.8);
     padding: 5% 2%;
-    width: 100%;
+    width: 80%;
     float: right;
   }
 
@@ -982,7 +998,7 @@ a {
     padding-top: 0;
     padding-bottom: 40px;
     font-weight: lighter;
-
+    width: 70%;
   }
 
   .access__content {
