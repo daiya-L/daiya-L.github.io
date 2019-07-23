@@ -1,4 +1,6 @@
 jQuery(function ($) {
+  var device = navigator.userAgent;
+  if (device.indexOf('iPhone') !== 0 || device.indexOf('iPad') !== 0) {
   $('#top-image').bgswitcher({
     images: ['img/top-img1.png', 'img/top-img2.png', 'img/top-img3.png', 'img/top-img4.png', 'img/top-img5.png'],
     interval: 4000,
@@ -6,6 +8,7 @@ jQuery(function ($) {
     duration: 1000,
     easing: "swing",
   });
+}
 });
 
 $(function() {
@@ -14,10 +17,8 @@ $(function() {
 	var device = navigator.userAgent;
 	if (device.indexOf('iPhone') !== -1 || device.indexOf('iPad') !== -1) {
 		//iPhoneかiPadならば
-    var id = $("#top-image").attr('id', 'top-image_sp');
-		$(".inner-header").css({ "background-position": "top center",
+		$("#top-image").css({ "background-position": "top center",
 					"background-size": "auto " + height + "px" });
-          console.log(id);
 	}
 });
 
