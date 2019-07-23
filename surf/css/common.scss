@@ -257,6 +257,16 @@ a {
   margin: 20px 0;
 }
 
+.and-more {
+  margin: -20px 80px 40px auto;
+  text-align: right;
+  display: block;
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
 .access__title {
   font-size: 3rem;
   text-align: center;
@@ -349,6 +359,10 @@ a {
 
   .about__text {
     line-height: 2.8rem;
+  }
+
+  .and-more {
+    margin-right: 100px;
   }
 }
 
@@ -544,6 +558,10 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .and-more {
+    margin-right: 40px;
   }
 
   .drink__menu {
@@ -884,6 +902,10 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .and-more {
+    margin-right: 20px;
   }
 
   .drink__menu {
