@@ -1,20 +1,23 @@
 jQuery(function ($) {
-    $('#top-image').bgswitcher({
-      images: ['img/top-img1.png', 'img/top-img2.png', 'img/top-img3.png', 'img/top-img4.png', 'img/top-img5.png'],
-      interval: 4000,
-      effect: "fade",
-      duration: 1000,
-      easing: "swing",
-    });
+  $('#top-image').bgswitcher({
+    images: ['img/top-img1.png', 'img/top-img2.png', 'img/top-img3.png', 'img/top-img4.png', 'img/top-img5.png'],
+    interval: 4000,
+    effect: "fade",
+    duration: 1000,
+    easing: "swing",
+  });
 });
 
-jQuery(function($){
-  var ua = navigator.userAgent;
-  if ( ua.indexOf( 'iPhone' ) > 0 || ua.indexOf( 'iPad' ) > 0) {
-    $('.inner-header').css({
-      'background': 'center center / cover no-repeat scroll',
-    });
-  }
+$(function() {
+	var height = $(window).height();
+	var $eyeCatch = $("#eyeCatch");
+	//iPhone・iPad背景画像バグ対処
+	var device = navigator.userAgent;
+	if (device.indexOf('iPhone') !== -1 || device.indexOf('iPad') !== -1) {
+		//iPhoneかiPadならば
+		$("#eyeCatch li").css({ "background-position": "top center",
+					"background-size": "auto " + height + "px" });
+	}
 });
 
 $(function() {

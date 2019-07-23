@@ -40,7 +40,7 @@ a {
 .inner-header {
   width: 100%;
   height: 100vh;
-  background: center center / cover no-repeat fixed;
+  background: url('../img/top-img1.png') center center / cover no-repeat fixed;
   position: relative;
 }
 
@@ -150,8 +150,29 @@ a {
   font-size: 3rem;
   text-align: center;
   padding: 40px;
-  margin: 60px 0;
+  margin: 60px auto;
   font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.food__title::before, .food__title::after,
+.drink__title::before, .drink__title::after,
+.access__title::before, .access__title::after {
+  content: '';
+  border-top: 2px solid #b0c4de;
+  flex-grow: 1;
+}
+
+.food__title::before, .drink__title::before, .access__title::before {
+  margin-right: 2rem;
+
+}
+
+.food__title::after,  .drink__title::after, .access__title::after {
+  margin-left: 2rem;
 }
 
 .about__text-block {
@@ -177,7 +198,7 @@ a {
   text-align: center;
   line-height: 2;
   font-size: 1.1rem;
-  border: dashed 1px #000;
+  border: dashed 2px #b0c4de;
   padding: 30px;
   width: 40%;
 }
@@ -271,8 +292,12 @@ a {
   font-size: 3rem;
   text-align: center;
   padding: 40px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 .access__content {
