@@ -333,6 +333,25 @@ a {
   margin-top: 40px;
 }
 
+@media screen and (min-width: 1500px) {
+
+  .about__title-block {
+    height: 800px;
+  }
+
+  .about__title {
+    margin: 120px 0 0 0;
+  }
+
+  .about__text-block {
+    margin: 120px;
+  }
+
+  .about__text {
+    line-height: 2.8rem;
+  }
+}
+
 /* tablet */
 
 @media screen and (min-width: 616px) and (max-width: 1023px) {
