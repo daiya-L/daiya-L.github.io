@@ -14,8 +14,10 @@ $(function() {
 	var device = navigator.userAgent;
 	if (device.indexOf('iPhone') !== -1 || device.indexOf('iPad') !== -1) {
 		//iPhoneかiPadならば
-		$("#top-image").css({ "background-position": "top center",
+    var id = $("#top-image").attr('id', 'top-image_sp');
+		$(".inner-header").css({ "background-position": "top center",
 					"background-size": "auto " + height + "px" });
+          console.log(id);
 	}
 });
 
