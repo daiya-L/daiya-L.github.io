@@ -8,6 +8,15 @@ jQuery(function ($) {
     });
 });
 
+jQuery(function($){
+var ua = navigator.userAgent;
+if ( ua.indexOf( 'iPhone' ) > 0 || ua.indexOf( 'iPad' ) > 0) {
+$('#top-image').css({
+'background-attachment': 'scroll',
+});
+}
+});
+
 $(function() {
   $(".nav-toggle").click(function() {
     $(".nav-toggle div").toggleClass("active");
